@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Club Sign Up Form</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+    body 
+    {
+        background-image: url("content/music-club.jpg");
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-color: #010833;
+        background-attachment: fixed;
+
+        overflow-x: hidden;
+    }
+
+    img{
+        width: 100%
+    }
+
+    #maindiv{
+        background-color: #E3E5F2;
+        margin: 2vw;
+
+        border-radius: 1vw;
+    }
+
+    #outerdiv{
+        background-color: #010833;
+        margin: 0px;
+        
+        border-radius: 2vw;
+    }
+
+    input{
+        border-radius: 0.5vw;
+        outline: #010833, solid, 2px;
+    }
+
+
+    .slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #535D9D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #535D9D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+    </style>
+
+</head>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+    <br>
+    <br>
+    <br>
+    </div>
+
+    <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block">
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    
+    <div id="outerdiv">
+        <br>
+        <div id="maindiv">
+            <br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-7"><h1>Welcome To The Music Club!</h1></div>
+                <div class="col-4"></div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-7">
+
+                    <form action=“https://crishtdp.github.io/AA1_Pinatubo_Edejer/Receiver.html” method=“POST”>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname">
+                        <br>
+                        <br>
+                        <label for="email">Student Email:</label><br>
+                        <input type="text" id="email" name="email">
+
+                        <br>
+                        <br>
+
+                        <p>Gender:</p>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="Male">Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="Female">Female</label>
+
+                        <br><br>
+
+                        <p>Incoming Grade Level:</p>
+
+                        <select name="section">
+                            <option value="7dia">7 - Diamond</option>
+                            <option value="7eme">7 - Emerald</option>
+                            <option value="7rub">7 - Ruby</option>
+                            <option value="7sap">7 - Sapphire</option>
+
+                            <option value="8cha">8 - Champaca</option>
+                            <option value="8dah">8 - Dahlia</option>
+                            <option value="8ila">8 - Ilang-Ilang</option>
+                            <option value="8sam">8 - Sampaguita</option>
+
+                            <option value="9ara">9 - Arayat</option>
+                            <option value="9bal">9 - Balingkilat</option>
+                            <option value="9pin">9 - Pinatubo</option>
+                            <option value="9sam">9 - Samat</option>
+
+                            <option value="0ELE">10 - Electron</option>
+                            <option value="0MUO">10 - Muon</option>
+                            <option value="0PHO">10 - Photon</option>
+                            <option value="0tau">10 - Tau</option>
+
+                            <option value="1CUR">11 - Curie</option>
+                            <option value="1DAR">11 - Darwin</option>
+                            <option value="1EIN">11 - Einstein</option>
+                            <option value="1PAS">11 - Pascal</option>
+
+                            <option value="2Ar">12 - Argon</option>
+                            <option value="2Kr">12 - Krypton</option>
+                            <option value="2Xe">12 - Xenon</option>
+                        </select><br><br>
+
+                        <p>Why do you want to join?:</p>
+
+                        <input type="checkbox" id="why1" name="why1" value="teach">
+                        <label for="why1"> I'd like to teach others about music</label><br>
+                        <input type="checkbox" id="why2" name="why2" value="practice">
+                        <label for="why2"> I'd like to practice my musical skills</label><br>
+                        <input type="checkbox" id="why3" name="why3" value="learn">
+                        <label for="why3"> I'd like to learn something new</label><br><br>
+
+                        <p>What instruments can you play already?:</p>
+
+                        <input type="checkbox" id="inst1" name="inst1" value="pstring">
+                        <label for="inst1"> Picked/Plucked string instruments (e.g. Guitar, Bass Guitar, Ukelele)</label><br>
+                        <input type="checkbox" id="inst2" name="inst2" value="piano">
+                        <label for="inst2"> Piano type instruments (e.g. Piano, Keyboard, Accordion, Melodica)</label><br>
+                        <input type="checkbox" id="inst3" name="inst3" value="bstring">
+                        <label for="inst3"> Bowed string isntruments (e.g. Violin, Violincello, Viola)</label><br>
+                        <input type="checkbox" id="inst4" name="inst4" value="woodwind">
+                        <label for="inst4"> Woodwind instruments (e.g. Flute, Clarinet, Saxophone)</label><br>
+                        <input type="checkbox" id="inst5" name="inst5" value="brass">
+                        <label for="inst5"> Woodwind instruments (e.g. Trumpet, Trombone, Horn)</label><br>
+                        <input type="checkbox" id="inst6" name="inst6" value="perc">
+                        <label for="inst6"> Percussion instruments (e.g. Drumset, Bongo)</label><br><br>
+
+                        <input type="submit" value="Submit"><br>
+
+                    </form>
+                    <br>
+
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        
+    </script>
+
+
+</body>
+</html>
